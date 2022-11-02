@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Conexion</string>
+    <string name="tvRegistrarse">Android_Todes</string>
+    <string name="checkBox1">CC</string>
+    <string name="checkBox2">CE</string>
+    <string name="button">Registrar</string>
+</resources>

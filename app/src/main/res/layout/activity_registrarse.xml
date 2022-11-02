@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:id="@+id/lEnunciados"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvFlecha"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="3dp"
+            android:drawableLeft="@drawable/ic_action_flecha"
+            android:onClick="PantallaLogueo"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="202dp"
+            android:layout_height="47dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="REGISTRARSE"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lsecundario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_header"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextnombre"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="7"
+            android:hint="Digite sus nombres"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextapellido"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="3dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="7"
+            android:hint="Digite sus apeliidos"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/editTextNumero"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="7"
+            android:hint="Digite su numero de identificación"
+            android:inputType="number"
+            android:padding="4dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ltipdoc"
+            android:layout_width="294dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="86dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp"
+                android:text="@string/checkBox1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="86dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1dp"
+                android:text="@string/checkBox2"
+                tools:ignore="TouchTargetS,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextFechanacimiento"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Digite su fecha de nacimiento"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextEmailAddress"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Digite correo electrónico"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Digite su teléfono"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextAlias"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Alias"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Digite su contraseña"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/eTPasswordConfir"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Confirme su contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btRegistrarse"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:onClick="PantallaLogueo"
+            android:text="@string/button"
+            />
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
