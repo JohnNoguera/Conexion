@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -58,6 +59,8 @@ public class RegistrarseActivity extends AppCompatActivity {
         btRegistrarse=findViewById(R.id.btRegistrarse);
         Conexion = FirebaseFirestore.getInstance();
         btRegistrarse.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View view) {
                 String nombre1 = editTextnombre.getText().toString();
@@ -70,7 +73,9 @@ public class RegistrarseActivity extends AppCompatActivity {
                 String telefono = editTextTelefono.getText().toString();
                 String correo1= editTextEmailAddress.getText().toString();
                 String alias= editTextAlias.getText().toString();
-                String fechanaci= editTextFechanacimiento.toString().toString();
+                String fechanaci= editTextFechanacimiento.getText().toString();
+
+
 
             }
         });
@@ -78,9 +83,6 @@ public class RegistrarseActivity extends AppCompatActivity {
 
 
     }
-
-
-
 
     public boolean onOptionsItemSelected(MenuItem item){
         String nombre1 = editTextnombre.getText().toString();
@@ -147,7 +149,7 @@ public class RegistrarseActivity extends AppCompatActivity {
         String telefono = editTextTelefono.getText().toString();
         String correo1= editTextEmailAddress.getText().toString();
         String alias= editTextAlias.getText().toString();
-        String fechanaci= editTextFechanacimiento.toString().toString();
+        String fechanaci= editTextFechanacimiento.getText().toString();
 
         if (nombre1.equals("")) {
             editTextnombre.setError("required");
@@ -156,7 +158,7 @@ public class RegistrarseActivity extends AppCompatActivity {
             editTextapellido.setError("required");
         }
 
-        if (correo1.equals("")) {
+        if (numero1.equals("")) {
             editTextNumero.setError("required");
         }
 
@@ -164,30 +166,30 @@ public class RegistrarseActivity extends AppCompatActivity {
             editTextPassword.setError("required");
         }
 
-        if (contrasena1.equals("")) {
+        if (contrasena2.equals("")) {
             eTPasswordConfir.setError("required");
         }
 
-        if (contrasena1.equals("")) {
+        if (lista1.equals("")) {
             checkBox1.setError("required");
         }
-        if (contrasena1.equals("")) {
+        if (lista2.equals("")) {
             checkBox2.setError("required");
         }
 
-        if (contrasena1.equals("")) {
+        if (telefono.equals("")) {
             editTextTelefono.setError("required");
         }
 
-        if (contrasena1.equals("")) {
+        if (correo1.equals("")) {
             editTextEmailAddress.setError("required");
         }
 
-        if (contrasena1.equals("")) {
+        if (alias.equals("")) {
             editTextAlias.setError("required");
         }
 
-        if (contrasena1.equals("")) {
+        if (fechanaci.equals("")) {
             editTextFechanacimiento.setError("required");
         }
     }
